@@ -279,3 +279,72 @@ aside{
     to {bottom: 0; opacity: 0;}
 }
 
+@media screen and (max-width: 992px) {
+    main {
+      flex-direction: column;
+    }
+  
+    .content, aside {
+      width: 100%;
+    }
+  
+    .container {
+      width: 90%;
+      margin: 16px auto;
+    }
+  
+    .inner {
+      width: 90%;
+      flex-direction: column;
+    }
+  
+    .inner .button {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .inner > .button > button {
+      width: 30%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 24px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    .form-group label, .checkbox {
+      font-size: 16px;
+    }
+  
+    .form-group input {
+      font-size: 16px;
+      height: 30px;
+    }
+  
+    #bookSubmit {
+      font-size: 14px;
+      height: 35px;
+    }
+  
+    .inner > .button > button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .inner .button {
+      flex-direction: column;
+    }
+  
+    #toast-dialog {
+      min-width: 200px;
+      margin-left: -100px;
+      font-size: 14px;
+    }
+  }
+  
+  
